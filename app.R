@@ -139,7 +139,22 @@ ui <- page_sidebar(
     numericInput("depth", "Calculation Depth (m):", 
                  value = 3, min = 0, step = 0.1)
   ),
-  
+  card(
+    card_body(
+      HTML('
+        <!-- Google AdSense test ad -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3940256099942544"
+             data-ad-slot="6300978111"
+             data-ad-format="auto"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      ')
+    ),
+    style = "width: 100%; min-height: 100px; margin-bottom: 20px;"
+  ),
   card(
     id = "soil_layer_card",
     card_header("Soil Layer Properties"),
