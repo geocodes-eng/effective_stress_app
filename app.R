@@ -139,16 +139,7 @@ ui <- page_sidebar(
     numericInput("depth", "Calculation Depth (m):", 
                  value = 3, min = 0, step = 0.1)
   ),
-card(
-  card_body(
-    HTML('
-      <iframe src="https://www.example.com" width="300" height="250" style="border:1px solid #ccc;">
-        Test Ad Placeholder
-      </iframe>
-    ')
-  ),
-  style = "width: 100%; min-height: 100px; margin-bottom: 20px;"
-),
+
   card(
     id = "soil_layer_card",
     card_header("Soil Layer Properties"),
